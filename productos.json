@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Lisboa",
+    "description": "Viaje estudiantil",
+    "price": 700,
+    "image": "../portugal.jpg",
+    "code": "L",
+    "stock": 40,
+    "id": 2
+  },
+  {
+    "title": "Bruselas",
+    "description": "Viaje cultural",
+    "price": 900,
+    "image": "../belgica.jpg",
+    "code": "B",
+    "stock": 60,
+    "id": 3
+  }
+]

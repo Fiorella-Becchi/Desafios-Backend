@@ -1,0 +1,14 @@
+{
+  "name": "desafios-backend",
+  "version": "1.0.0",
+  "description": "desafio3",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fiorella becchi",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
