@@ -1,6 +1,6 @@
 import fs from "fs";
 
-class ProductManager {
+export class productManager {
     constructor(filePath) {
         this.path = filePath;
         this.products = [];
@@ -81,12 +81,19 @@ class ProductManager {
 }
 
 // Ejemplo de uso
-const productos = new ProductManager('productos.json');
+const productos = new productManager('productos.json');
 
 // Agregar productos
-productos.addProduct('Paris', 'Viaje turístico', 500, '../francia.jpg', 'F', 20);
-productos.addProduct('Lisboa', 'Viaje estudiantil', 700, '../portugal.jpg', 'L', 40);
-productos.addProduct('Bruselas', 'Viaje cultural', 900, '../belgica.jpg', 'B', 60);
+productos.addProduct('Paris', 'Viaje turístico', 500, '../francia.jpg', 'A', 20);
+productos.addProduct('Lisboa', 'Viaje estudiantil', 700, '../portugal.jpg', 'B', 40);
+productos.addProduct('Bruselas', 'Viaje cultural', 900, '../belgica.jpg', 'C', 60);
+productos.addProduct('Berlin', 'Viaje 4', 1100, 'img', 'D', 80);
+productos.addProduct('Roma', 'Viaje 5', 1300, 'img', 'E', 100);
+productos.addProduct('Madrid', 'Viaje 6', 1500, 'img', 'F', 120);
+productos.addProduct('Lima', 'Viaje 7', 1700, 'img', 'G', 140);
+productos.addProduct('Buenos Aires', 'Viaje 8', 2000, 'img', 'H', 160);
+productos.addProduct('Rio de Janeiro', 'Viaje 9', 2300, 'img', 'I', 180);
+productos.addProduct('Medellin', 'Viaje 10', 2500, 'img', 'J', 200);
 
 // Obtener todos los productos
 console.log('Todos los productos:', productos.getProducts());
@@ -113,3 +120,4 @@ const productIdToDelete = 1;
 console.log('Antes de la eliminación:', productos.getProducts());
 productos.deleteProduct(productIdToDelete);
 console.log('Después de la eliminación:', productos.getProducts());
+
