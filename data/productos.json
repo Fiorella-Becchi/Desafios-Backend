@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Lisboa",
+    "description": "Viaje estudiantil",
+    "price": 700,
+    "image": "../portugal.jpg",
+    "code": "B",
+    "stock": 40,
+    "status": 1,
+    "id": 2
+  },
+  {
+    "title": "Bruselas",
+    "description": "Viaje cultural",
+    "price": 900,
+    "image": "../belgica.jpg",
+    "code": "C",
+    "stock": 60,
+    "status": 1,
+    "id": 3
+  },
+  {
+    "title": "Berlin",
+    "description": "Viaje 4",
+    "price": 1100,
+    "image": "img",
+    "code": "D",
+    "stock": 80,
+    "status": 1,
+    "id": 4
+  },
+  {
+    "title": "Roma",
+    "description": "Viaje 5",
+    "price": 1300,
+    "image": "img",
+    "code": "E",
+    "stock": 100,
+    "status": 1,
+    "id": 5
+  },
+  {
+    "title": "Madrid",
+    "description": "Viaje 6",
+    "price": 1500,
+    "image": "img",
+    "code": "F",
+    "stock": 120,
+    "status": 1,
+    "id": 6
+  },
+  {
+    "title": "Lima",
+    "description": "Viaje 7",
+    "price": 1700,
+    "image": "img",
+    "code": "G",
+    "stock": 140,
+    "status": 1,
+    "id": 7
+  },
+  {
+    "title": "Buenos Aires",
+    "description": "Viaje 8",
+    "price": 2000,
+    "image": "img",
+    "code": "H",
+    "stock": 160,
+    "status": 1,
+    "id": 8
+  },
+  {
+    "title": "Rio de Janeiro",
+    "description": "Viaje 9",
+    "price": 2300,
+    "image": "img",
+    "code": "I",
+    "stock": 180,
+    "status": 1,
+    "id": 9
+  },
+  {
+    "title": "Medellin",
+    "description": "Viaje 10",
+    "price": 2500,
+    "image": "img",
+    "code": "J",
+    "stock": 200,
+    "status": 1,
+    "id": 10
+  },
+  {
+    "title": "Bruselas",
+    "description": "Viaje cultural",
+    "price": 900,
+    "image": "img3",
+    "code": "L",
+    "stock": 60,
+    "status": 1,
+    "id": 11
+  },
+  {
+    "title": "Paris",
+    "description": "Viaje turístico",
+    "price": 500,
+    "image": "../francia.jpg",
+    "code": "A",
+    "stock": 20,
+    "status": 1,
+    "id": 12
+  }
+]

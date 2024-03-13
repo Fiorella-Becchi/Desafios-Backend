@@ -2,11 +2,11 @@
   "name": "desafios-backend",
   "type": "module",
   "version": "1.0.0",
-  "description": "desafio3",
+  "description": "Primer pre-entrega",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "fiorella becchi",
   "license": "ISC",

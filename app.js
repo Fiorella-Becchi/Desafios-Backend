@@ -1,51 +1,24 @@
 import express from "express";
-import { productManager } from "./src/productManager.js";
-
+import { productManager } from './src/productManager.js';
+import productsRouter from "./src/routes/products.router.js";
+import cartRouter from "./src/routes/carts.router.js";
 
 
 const app = express();
-const PORT = 8080;
-const PJ = './src/productos.json';
+
+const PJ = './data/productos.json';
 const PM = new productManager(PJ);
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+//app.use('/static', express.static('public'));
 
-//app.get('/bienvenida', async (req, res) => {
-//   res.send('<h1 style="color: black;">Bienvenidos!</h1>');
-//});
+//Use Routers
+app.use('/api/carts/', cartRouter);
+app.use('./api/products/', productsRouter);
 
-//Carga de products.json con limite de resultados.
-app.get('/products', async (req, res) => {
-    try {
-        let limit = req.query.limit;
-
-        const products = await PM.getProducts(limit);
-        res.json(products);
-
-    } catch (error) {
-        console.error(error);
-        res.status(500).send('Internal Server Error');
-    }
-});
-
-//Devuelve producto solicitado.
-app.get('/products/:pid', async (req, res) => {
-    try {
-        let productId = parseInt(req.params.pid);
-
-        const products = await PM.getProductById(productId);
-        res.json(products);
-
-    } catch (error) {
-        console.error(error);
-        res.status(500).send('Internal Server Error');
-    }
-});
-
-
-//Servidor
+// Servidor
+const PORT = 8080;
 app.listen(PORT, () => {
     console.log(`Servidor activo en http://localhost:${PORT}`);
 });
-
-
