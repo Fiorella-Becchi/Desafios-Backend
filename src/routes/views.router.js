@@ -1,6 +1,7 @@
+import express from "express";
 import { Router } from "express";
 
-const router = Router();
+const router = express.Router();
 
 const viajes = [
     {name:"Paris", price: "100"},
@@ -20,7 +21,7 @@ router.get("/", (req, res) => {
     res.render(
         "index",
         {
-            title: "CoderHouse",
+            title: "Cuarto Desafio",
             style: "index.css",
             user: testUser,
             isAdmin: testUser.role === "admin",

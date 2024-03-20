@@ -1,5 +1,7 @@
 const socket = io();
-const textInput = document.querySelector("#text-input");
+
+
+/*const textInput = document.querySelector("#text-input");
 const showText = document.querySelector("#show-text");
 const chatInput = document.querySelector("#chat-message");
 const allMessages = document.querySelector("#all-messages");
@@ -25,4 +27,12 @@ socket.on("allMessages", data => {
 function send() {
     socket.emit("chatMessage", chatInput.value);
     chatInput.value = "";
-}
+} */
+
+socket.emit("mensaje", "Hola mundo!");
+
+//Recibimos el saludito del servidor: 
+
+socket.on("saludito", (data) => {
+    console.log(data);
+})

@@ -55,9 +55,12 @@ const httpServer = app.listen(PORT, () => {
 const socketServer = new Server(httpServer);
 
 socketServer.on("connection", socket => {
-    console.log("Nuevo cliente conectado"); 
+    console.log("Nuevo cliente conectado");
 
     socket.on("message", data => {
         console.log("Recibi el dato: ", data);
+        io.sockets.emit("mensaje", data);
     })
+
+    socket.emit("saludito", "Hola cliente, ¿cómo estas?");
 });
